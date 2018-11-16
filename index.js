@@ -1,4 +1,5 @@
-//With thanks to Elijah Manor!
+#!/usr/bin/env node
+
 const inquirer = require("inquirer");
 const cfonts = require("cfonts");
 const opn = require("opn");
@@ -18,18 +19,18 @@ const actions = {
   }
 };
 
-cfonts.say("Sarah Hodges", {
+cfonts.say("Sarah|Hodges", {
   font: "simple3d",
+  lineHeight: 0.5,
   colors: ["candy"]
 });
 
 console.log(`Hello! 
-My name is Sarah Hodges.
-I am a software engineer 
+I'm Sarah Hodges, a software developer 
 (and recovering designer) working 
 with front-end technologies. 
 I live at the intersection of 
-design and code.
+DESIGN && CODE.
 `);
 
 inquirer
@@ -45,3 +46,5 @@ inquirer
     actions[answers.choice]();
     process.exit(1);
   });
+
+//With thanks to Elijah Manor!
