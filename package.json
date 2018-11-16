@@ -1,0 +1,16 @@
+{
+  "name": "curious-dev",
+  "version": "1.0.0",
+  "description": "Information about Me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sarah Hodges",
+  "license": "MIT",
+  "dependencies": {
+    "cfonts": "^2.2.3",
+    "inquirer": "^6.2.0",
+    "opn": "^5.4.0"
+  }
+}
