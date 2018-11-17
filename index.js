@@ -5,11 +5,11 @@ const cfonts = require("cfonts");
 const opn = require("opn");
 
 const actions = {
-  Twitter() {
-    opn("https://twitter.com/slhstudio");
-  },
   GitHub() {
     opn("https://github.com/slhstudio");
+  },
+  Twitter() {
+    opn("https://twitter.com/slhstudio");
   },
   Website() {
     opn("https://slhstudio.com");
@@ -20,17 +20,15 @@ const actions = {
 };
 
 cfonts.say("Sarah|Hodges", {
-  font: "simple3d",
+  font: "chrome",
   lineHeight: 0.5,
-  colors: ["candy"]
+  colors: ["magenta", "white", "magentaBright"]
 });
 
-console.log(`Hello! 
-I'm Sarah Hodges, a software developer 
-(and recovering designer) working 
-with front-end technologies. 
-I live at the intersection of 
-DESIGN && CODE.
+console.log(`Hello! I am a software developer 
+(and recovering designer) focusing on 
+front-end web technologies. I live at 
+the intersection of DESIGN && CODE.
 `);
 
 inquirer
@@ -38,13 +36,11 @@ inquirer
     {
       type: "list",
       name: "choice",
-      message: "What would you like to know about me?",
-      choices: ["Twitter", "GitHub", "Website", "Quit"]
+      message: "What else would you like to know about me?",
+      choices: ["GitHub", "Twitter", "Website", "Quit"]
     }
   ])
   .then(answers => {
     actions[answers.choice]();
     process.exit(1);
   });
-
-//With thanks to Elijah Manor!

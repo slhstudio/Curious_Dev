@@ -1,11 +1,19 @@
 {
   "name": "curious-dev",
   "version": "1.0.0",
-  "description": "Information about Me",
+  "description": "CLI information about Sarah Hodges",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "curious-dev": "./index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slhstudio/Curious_Dev"
+  },
+  "keywords": [
+    "person",
+    "contact"
+  ],
   "author": "Sarah Hodges",
   "license": "MIT",
   "dependencies": {
